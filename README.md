@@ -13,10 +13,6 @@
 
 > Short introduction, this is very simple image picker, that allows you to pick image file from gallery or camera, you can integrate your own Uploader ViewModel using this library for upload process using your File Storage API
 
-## Demo
-
-<img src="internet-checker.gif" width="250">
-
 ## Install
 
 For installation just add this code in your app build.gradle file
