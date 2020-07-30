@@ -29,5 +29,5 @@ fun ImageView.clearImage() {
 }
 
 fun ImageView.clearImageWithPlaceholder() {
-    this.setImageResource(R.drawable.placeholder)
+    this.setImageResource(R.drawable.image_placeholder)
 }
