@@ -21,7 +21,7 @@
       "properties": {
         "packageId": "com.xoxoer.epict",
         "split": "",
-        "minSdkVersion": "23"
+        "minSdkVersion": "16"
       }
     }
   ]

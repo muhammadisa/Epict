@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-37:12
-MERGED from [:epictlibrary] C:\Users\hyper\Documents\Projects\me\opensource\epict\epictlibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
+ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-36:12
+MERGED from [:epictlibrary] C:\Users\hyper\Documents\Projects\me\opensource\epict\epictlibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\b7e7c08114c1329e03c36452e60a142c\jetified-core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\e46f3e16fd8948e8e4c48c913cb404d3\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\0686ca90b872620e1e93c4a9f2d2181e\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -46,22 +46,22 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\hyper\.gradle\cache
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\abca430f327a1ba4137054854d25dfd3\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\836e9858d101fce50deef7223d87d0d6\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\6083e5aff4a41b4b352509ce72ef01fb\print-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:4:5-33
 		INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-36:12
 		INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:1-36:12
 		INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:2:11-69
@@ -78,7 +78,7 @@ ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\mai
 	android:name
 		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:8:22-62
 application
-ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:10:5-35:19
+ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:10:5-34:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\0686ca90b872620e1e93c4a9f2d2181e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\0686ca90b872620e1e93c4a9f2d2181e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\e7a07db85bbec5bf09fed6a34db79cc5\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
@@ -89,8 +89,6 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hy
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\b741faf0c0e978004788a3922a8a438d\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\d7d0dcd8d56a6a820c9a066717ffc284\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\d7d0dcd8d56a6a820c9a066717ffc284\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
-	android:requestLegacyExternalStorage
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:16:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\hyper\.gradle\caches\transforms-2\files-2.1\00244e2ecd82b8e8696f962deb33b25d\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -104,37 +102,37 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\hyper\.gradle
 	android:allowBackup
 		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:17:9-40
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:16:9-40
 activity#com.xoxoer.example.MainActivity
-ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:18:9-24:20
+ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:17:9-23:20
 	android:name
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:18:19-65
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:17:19-65
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:21:27-74
 provider#androidx.core.content.FileProvider
-ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:26:9-34:20
+ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:25:9-33:20
 	android:grantUriPermissions
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:30:13-47
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:29:13-47
 	android:authorities
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:28:13-66
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:27:13-66
 	android:exported
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:29:13-37
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:27:13-62
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:26:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:31:13-33:54
+ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:30:13-32:54
 	android:resource
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:33:17-51
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:32:17-51
 	android:name
-		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:32:17-67
+		ADDED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml:31:17-67
 uses-sdk
 INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\hyper\Documents\Projects\me\opensource\epict\example\src\main\AndroidManifest.xml
