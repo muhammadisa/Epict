@@ -1,4 +1,4 @@
-package com.xoxoer.epictlibrary
+package com.xoxoer.epict
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -10,17 +10,17 @@ import android.provider.MediaStore
 import android.widget.Toast
 import androidx.databinding.ObservableField
 import androidx.lifecycle.ViewModel
-import com.xoxoer.epictlibrary.constant.Constants.CAMERA_REQUEST_CODE
-import com.xoxoer.epictlibrary.constant.Constants.GALLERY_REQUEST_CODE
-import com.xoxoer.epictlibrary.exceptions.ICEContractInterfaceNotValid
-import com.xoxoer.epictlibrary.interfaces.EpictContract
-import com.xoxoer.epictlibrary.interfaces.EpictViewModelContract
-import com.xoxoer.epictlibrary.model.EpictData
-import com.xoxoer.epictlibrary.model.EpictViews
-import com.xoxoer.epictlibrary.utils.clearImageWithPlaceholder
-import com.xoxoer.epictlibrary.utils.createImage
-import com.xoxoer.epictlibrary.utils.fileProvider
-import com.xoxoer.epictlibrary.utils.loadImage
+import com.xoxoer.epict.constant.Constants.CAMERA_REQUEST_CODE
+import com.xoxoer.epict.constant.Constants.GALLERY_REQUEST_CODE
+import com.xoxoer.epict.exceptions.ICEContractInterfaceNotValid
+import com.xoxoer.epict.interfaces.EpictContract
+import com.xoxoer.epict.interfaces.EpictViewModelContract
+import com.xoxoer.epict.model.EpictData
+import com.xoxoer.epict.model.EpictViews
+import com.xoxoer.epict.utils.clearImageWithPlaceholder
+import com.xoxoer.epict.utils.createImage
+import com.xoxoer.epict.utils.fileProvider
+import com.xoxoer.epict.utils.loadImage
 import java.io.File
 import java.io.IOException
 

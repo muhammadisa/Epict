@@ -1,6 +1,6 @@
-package com.xoxoer.epictlibrary.model
+package com.xoxoer.epict.model
 
-import com.xoxoer.epictlibrary.enums.ImageShape
+import com.xoxoer.epict.enums.ImageShape
 
 data class EpictData (
     val title: String,

@@ -1,4 +1,4 @@
-package com.xoxoer.epictlibrary.interfaces
+package com.xoxoer.epict.interfaces
 
 import androidx.databinding.ObservableField
 import androidx.lifecycle.MutableLiveData

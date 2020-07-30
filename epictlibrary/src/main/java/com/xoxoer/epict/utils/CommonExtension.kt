@@ -1,4 +1,4 @@
-package com.xoxoer.epictlibrary.utils
+package com.xoxoer.epict.utils
 
 import android.content.Context
 import android.os.Environment
