@@ -1,3 +1,2 @@
-include ':epictlibrary'
-include ':app'
+include ':epictlibrary', ':example'
 rootProject.name = "epict"
