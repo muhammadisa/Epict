@@ -1,0 +1,3 @@
+include ':epictlibrary'
+include ':app'
+rootProject.name = "epict"
