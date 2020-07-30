@@ -1,4 +1,4 @@
-package com.xoxoer.epictlibrary.constant
+package com.xoxoer.epict.constant
 
 object Constants {
 

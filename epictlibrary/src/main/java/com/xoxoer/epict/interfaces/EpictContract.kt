@@ -1,4 +1,4 @@
-package com.xoxoer.epictlibrary.interfaces
+package com.xoxoer.epict.interfaces
 
 import java.io.File
 

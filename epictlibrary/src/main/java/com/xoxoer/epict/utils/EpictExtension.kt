@@ -1,11 +1,11 @@
-package com.xoxoer.epictlibrary.utils
+package com.xoxoer.epict.utils
 
 import android.content.Context
 import android.net.Uri
 import androidx.core.content.FileProvider
-import com.xoxoer.epictlibrary.enums.ImageShape
-import com.xoxoer.epictlibrary.model.EpictData
-import com.xoxoer.epictlibrary.model.EpictViews
+import com.xoxoer.epict.enums.ImageShape
+import com.xoxoer.epict.model.EpictData
+import com.xoxoer.epict.model.EpictViews
 import java.io.File
 
 // file provider

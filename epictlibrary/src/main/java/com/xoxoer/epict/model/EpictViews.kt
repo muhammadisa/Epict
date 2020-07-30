@@ -1,4 +1,4 @@
-package com.xoxoer.epictlibrary.model
+package com.xoxoer.epict.model
 
 import android.view.View
 import android.widget.ImageView

@@ -1,11 +1,11 @@
-package com.xoxoer.epictlibrary.utils
+package com.xoxoer.epict.utils
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.bumptech.glide.request.RequestOptions
-import com.xoxoer.epictlibrary.R
+import com.xoxoer.epict.R
 
 fun ImageView.load(imgUri: Any) {
     Glide.with(context)
@@ -29,5 +29,5 @@ fun ImageView.clearImage() {
 }
 
 fun ImageView.clearImageWithPlaceholder() {
-//    this.setImageResource(R.drawable)
+    this.setImageResource(R.drawable.placeholder)
 }

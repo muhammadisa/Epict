@@ -4,12 +4,11 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.xoxoer.epictlibrary.Epict
-import com.xoxoer.epictlibrary.constant.Constants.CAMERA_REQUEST_CODE
-import com.xoxoer.epictlibrary.constant.Constants.GALLERY_REQUEST_CODE
-import com.xoxoer.epictlibrary.enums.ImageShape
-import com.xoxoer.epictlibrary.model.EpictData
-import com.xoxoer.epictlibrary.model.EpictViews
+import com.xoxoer.epict.constant.Constants.CAMERA_REQUEST_CODE
+import com.xoxoer.epict.constant.Constants.GALLERY_REQUEST_CODE
+import com.xoxoer.epict.enums.ImageShape
+import com.xoxoer.epict.model.EpictData
+import com.xoxoer.epict.model.EpictViews
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

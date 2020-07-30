@@ -1,4 +1,4 @@
-package com.xoxoer.epictlibrary.enums
+package com.xoxoer.epict.enums
 
 enum class ImageShape {
     CIRCLE, SQUARE
