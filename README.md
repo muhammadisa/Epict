@@ -2,13 +2,14 @@
 
 <h1 align="center">Welcome to Epict 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
   <img alt="documentation: yes" src="https://img.shields.io/badge/Documentation-Yes-green.svg" />
   <img alt="maintained: yes" src="https://img.shields.io/badge/Maintained-Yes-green.svg" />
 </p>
+
 
 
 > Short introduction, this is very simple image picker, that allows you to pick image file from gallery or camera, you can integrate your own Uploader ViewModel using this library for upload process using your File Storage API
@@ -18,7 +19,7 @@
 For installation just add this code in your app build.gradle file
 
 ```groovy
-implementation 'com.github.muhammadisa:epict:1.0.1'
+implementation 'com.github.muhammadisa:epict:1.0.2'
 ```
 
 ## Setup
@@ -94,9 +95,39 @@ epict = Epict.Builder()
     .build()
 ```
 
+##### Example of ViewModel class for epict
 
+```kotlin
+// class must be implement EpictViewModelContract interface
+class PhotoUploaderViewModel : ViewModel(), EpictViewModelContract {
 
-##### Full example
+    override var fileAbsolutePath = ObservableField<String>()
+    override var fileToBeUploaded = ObservableField<File>()
+    override var uploadedFileObjectName = MutableLiveData<String>()
+    override var uploadedFileUrl = MutableLiveData<String>()
+
+    override fun uploadImageToServer() {
+        GlobalScope.launch {
+            // delay used for pretend like uploading image to server
+            delay(1000)
+            uploadedFileUrl.postValue(fileAbsolutePath.get())
+            uploadedFileObjectName.postValue(fileToBeUploaded.get()?.name)
+        }
+    }
+
+    override fun retractImageFromServer() {
+        GlobalScope.launch {
+            // delay used for pretend like retracting image from server
+            delay(1000)
+            uploadedFileUrl.postValue(null)
+            uploadedFileObjectName.postValue(null)
+        }
+    }
+
+}
+```
+
+##### Full example for mvvm project
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -104,13 +135,13 @@ class MainActivity : AppCompatActivity() {
     // epict lateinit var
     private lateinit var epict: Epict
 
-    // non-MVVM project
-    private lateinit var file: File
-    private lateinit var absoluteFile: String
+    private lateinit var photoUploaderViewModel: PhotoUploaderViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        photoUploaderViewModel = PhotoUploaderViewModel()
 
         val data = EpictData(
             "Choose",
@@ -125,10 +156,7 @@ class MainActivity : AppCompatActivity() {
         )
         epict = Epict.Builder()
             .context(this) // required
-            // viewModel is only worked with MVVM architecture
-            // if your project architecture is not MVVM you can't
-            // use viewModel
-            .viewModel(PhotoUploaderViewModel()) // optional
+            .viewModel(photoUploaderViewModel)
             .data(data) // required
             .views(views) // required
             .build()
@@ -139,23 +167,84 @@ class MainActivity : AppCompatActivity() {
         when (requestCode) {
             CAMERA_REQUEST_CODE -> if (resultCode == Activity.RESULT_OK) {
                 // usage of pick from camera
-                // MVVM project
                 epict.upload()
 
-                // non-MVVM project
-                file = epict.fileResult.get()!!
-                absoluteFile = epict.fileAbsolutePath.get()!!
+                text_view_file_absolute.text = "Absolute Path : ${photoUploaderViewModel.fileToBeUploaded.get()!!.absolutePath}"
+                text_view_image_uri.text = "URI : ${photoUploaderViewModel.fileAbsolutePath.get()!!}"
+                Log.e("FILE", photoUploaderViewModel.fileToBeUploaded.get()!!.absolutePath)
+                Log.e("ABSOLUTE", photoUploaderViewModel.fileAbsolutePath.get()!!)
             }
             GALLERY_REQUEST_CODE -> if (resultCode == Activity.RESULT_OK) {
                 // usage of pick from gallery
                 epict.getRealPathFromURI(data?.data)
-
-                // MVVM project
                 epict.upload()
 
-                // non-MVVM project
+                text_view_file_absolute.text = "Absolute Path : ${photoUploaderViewModel.fileToBeUploaded.get()!!.absolutePath}"
+                text_view_image_uri.text = "URI : ${photoUploaderViewModel.fileAbsolutePath.get()!!}"
+                Log.e("FILE", photoUploaderViewModel.fileToBeUploaded.get()!!.absolutePath)
+                Log.e("ABSOLUTE", photoUploaderViewModel.fileAbsolutePath.get()!!)
+            }
+        }
+    }
+}
+```
+
+##### Full example for non mvvm project
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+
+    // epict lateinit var
+    private lateinit var epict: Epict
+
+    // for store file and absolute path file
+    private lateinit var file: File
+    private lateinit var absoluteFile: String
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val data = EpictData(
+            "Choose",
+            "Take photo profile from?",
+            "com.your.app.package.fileprovider",
+            ImageShape.CIRCLE
+        )
+        val views = EpictViews(
+            image_view_result,
+            button_upload,
+            button_retract
+        )
+        epict = Epict.Builder()
+            .context(this) // required
+            .data(data) // required
+            .views(views) // required
+            .build()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        when (requestCode) {
+            CAMERA_REQUEST_CODE -> if (resultCode == Activity.RESULT_OK) {
+                // usage of pick from camera
                 file = epict.fileResult.get()!!
                 absoluteFile = epict.fileAbsolutePath.get()!!
+                text_view_file_absolute.text = "Absolute Path : ${file.absolutePath}"
+                text_view_image_uri.text = "URI : $absoluteFile"
+                Log.e("FILE", file.absolutePath)
+                Log.e("ABSOLUTE", absoluteFile)
+            }
+            GALLERY_REQUEST_CODE -> if (resultCode == Activity.RESULT_OK) {
+                // usage of pick from gallery
+                epict.getRealPathFromURI(data?.data)
+                
+                file = epict.fileResult.get()!!
+                absoluteFile = epict.fileAbsolutePath.get()!!
+                text_view_file_absolute.text = "Absolute Path : ${file.absolutePath}"
+                text_view_image_uri.text = "URI : $absoluteFile"
+                Log.e("FILE", file.absolutePath)
+                Log.e("ABSOLUTE", absoluteFile)
             }
         }
     }

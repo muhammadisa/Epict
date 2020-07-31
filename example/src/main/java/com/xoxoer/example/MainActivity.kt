@@ -3,6 +3,7 @@ package com.xoxoer.example
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.xoxoer.epict.Epict
 import com.xoxoer.epict.constant.Constants.CAMERA_REQUEST_CODE
@@ -18,13 +19,17 @@ class MainActivity : AppCompatActivity() {
     // epict lateinit var
     private lateinit var epict: Epict
 
-    // non-MVVM project
+    // for store file and absolute path file
     private lateinit var file: File
     private lateinit var absoluteFile: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        button_navigate_version.setOnClickListener {
+            startActivity(Intent(this@MainActivity, MainMvvmActivity::class.java))
+        }
 
         val data = EpictData(
             "Choose",
@@ -39,10 +44,6 @@ class MainActivity : AppCompatActivity() {
         )
         epict = Epict.Builder()
             .context(this) // required
-            // viewModel is only worked with MVVM architecture
-            // if your project architecture is not MVVM you can't
-            // use viewModel
-            .viewModel(PhotoUploaderViewModel()) // optional
             .data(data) // required
             .views(views) // required
             .build()
@@ -53,24 +54,23 @@ class MainActivity : AppCompatActivity() {
         when (requestCode) {
             CAMERA_REQUEST_CODE -> if (resultCode == Activity.RESULT_OK) {
                 // usage of pick from camera
-
-                // MVVM project
-                epict.upload()
-
-                // non-MVVM project
                 file = epict.fileResult.get()!!
                 absoluteFile = epict.fileAbsolutePath.get()!!
+                text_view_file_absolute.text = "Absolute Path : ${file.absolutePath}"
+                text_view_image_uri.text = "URI : $absoluteFile"
+                Log.e("FILE", file.absolutePath)
+                Log.e("ABSOLUTE", absoluteFile)
             }
             GALLERY_REQUEST_CODE -> if (resultCode == Activity.RESULT_OK) {
                 // usage of pick from gallery
                 epict.getRealPathFromURI(data?.data)
 
-                // MVVM project
-                epict.upload()
-
-                // non-MVVM project
                 file = epict.fileResult.get()!!
                 absoluteFile = epict.fileAbsolutePath.get()!!
+                text_view_file_absolute.text = "Absolute Path : ${file.absolutePath}"
+                text_view_image_uri.text = "URI : $absoluteFile"
+                Log.e("FILE", file.absolutePath)
+                Log.e("ABSOLUTE", absoluteFile)
             }
         }
     }

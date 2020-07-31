@@ -18,7 +18,7 @@ class PhotoUploaderViewModel : ViewModel(), EpictViewModelContract {
 
     override fun uploadImageToServer() {
         GlobalScope.launch {
-            // delay used for pretend like uploading to server
+            // delay used for pretend like uploading image to server
             delay(1000)
             uploadedFileUrl.postValue(fileAbsolutePath.get())
             uploadedFileObjectName.postValue(fileToBeUploaded.get()?.name)
@@ -27,7 +27,7 @@ class PhotoUploaderViewModel : ViewModel(), EpictViewModelContract {
 
     override fun retractImageFromServer() {
         GlobalScope.launch {
-            // delay used for pretend like uploading to server
+            // delay used for pretend like retracting image from server
             delay(1000)
             uploadedFileUrl.postValue(null)
             uploadedFileObjectName.postValue(null)
