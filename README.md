@@ -49,6 +49,10 @@ implementation 'com.github.muhammadisa:epict:1.0.2'
    </application>
    ```
 
+## Need Example?
+
+Just click this link https://github.com/muhammadisa/epict/tree/master/example/src/main/java/com/xoxoer/example
+
 ## Simple Usage
 
 ##### EpictData creation
