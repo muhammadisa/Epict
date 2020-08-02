@@ -111,6 +111,7 @@ class PhotoUploaderViewModel : ViewModel(), EpictViewModelContract {
     override var uploadedFileUrl = MutableLiveData<String>()
 
     override fun uploadImageToServer() {
+        // replace this code with uploader API interaction
         GlobalScope.launch {
             // delay used for pretend like uploading image to server
             delay(1000)
@@ -120,6 +121,7 @@ class PhotoUploaderViewModel : ViewModel(), EpictViewModelContract {
     }
 
     override fun retractImageFromServer() {
+        // replace this code with uploader API interaction
         GlobalScope.launch {
             // delay used for pretend like retracting image from server
             delay(1000)
