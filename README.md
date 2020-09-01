@@ -16,7 +16,7 @@
 
 ## Contribute?
 
-Just click this link https://github.com/muhammadisa/epict/blob/master/CONTRIBUTING.md
+Read the terms https://github.com/muhammadisa/epict/blob/master/CONTRIBUTING.md
 
 ## Install
 
