@@ -14,6 +14,10 @@
 
 > Short introduction, this is very simple image picker, that allows you to pick image file from gallery or camera, you can integrate your own Uploader ViewModel using this library for upload process using your File Storage API
 
+## Contribute?
+
+Just click this link https://github.com/muhammadisa/epict/blob/master/CONTRIBUTING.md
+
 ## Install
 
 For installation just add this code in your app build.gradle file
